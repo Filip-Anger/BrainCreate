@@ -1,0 +1,16 @@
+{
+  "exportTimestamp": "2026-01-21T16-03-45",
+  "bodyType": "teen",
+  "standardAnimations": {
+    "exported": [],
+    "failed": []
+  },
+  "customAnimations": {
+    "exported": [
+      "thrust_oversize"
+    ],
+    "failed": []
+  },
+  "frameSize": 64,
+  "frameCounts": {}
+}

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dlme4sj5mlcib"
+
+[deps]
+
+files=["res://Static/Sprite/credits/credits.notes.translation", "res://Static/Sprite/credits/credits.authors.translation", "res://Static/Sprite/credits/credits.licenses.translation", "res://Static/Sprite/credits/credits.urls.translation"]
+
+source_file="res://Static/Sprite/credits/credits.csv"
+dest_files=["res://Static/Sprite/credits/credits.notes.translation", "res://Static/Sprite/credits/credits.authors.translation", "res://Static/Sprite/credits/credits.licenses.translation", "res://Static/Sprite/credits/credits.urls.translation"]
+
+[params]
+
+compress=true
+delimiter=0

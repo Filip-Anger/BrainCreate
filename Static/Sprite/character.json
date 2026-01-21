@@ -1,0 +1,507 @@
+{
+  "version": 2,
+  "bodyType": "teen",
+  "selections": {
+    "body": {
+      "itemId": "body",
+      "variant": "amber",
+      "name": "Body color (amber)"
+    },
+    "head": {
+      "itemId": "heads_human_male",
+      "variant": "amber",
+      "name": "Human male (amber)"
+    },
+    "shadow": {
+      "itemId": "shadow",
+      "variant": "shadow",
+      "name": "Shadow (shadow)"
+    },
+    "nose": {
+      "itemId": "head_nose_button",
+      "variant": "amber",
+      "name": "Button nose (amber)"
+    },
+    "clothes": {
+      "itemId": "torso_clothes_shortsleeve",
+      "variant": "red",
+      "name": "Shortsleeve (red)"
+    },
+    "backpack": {
+      "itemId": "backpack",
+      "variant": "black",
+      "name": "Backpack (black)"
+    },
+    "legs": {
+      "itemId": "legs_formal",
+      "variant": "blue",
+      "name": "Formal Pants (blue)"
+    },
+    "shoes": {
+      "itemId": "feet_shoes_basic",
+      "variant": "black",
+      "name": "Basic Shoes (black)"
+    },
+    "weapon": {
+      "itemId": "weapon_magic_s",
+      "variant": "light",
+      "name": "S staff (light)"
+    },
+    "hair": {
+      "itemId": "hair_bedhead",
+      "variant": "rose",
+      "name": "Bedhead (rose)"
+    }
+  },
+  "selectedAnimation": "walk",
+  "showTransparencyGrid": true,
+  "applyTransparencyMask": false,
+  "matchBodyColorEnabled": true,
+  "compactDisplay": false,
+  "enabledLicenses": {
+    "CC0": true,
+    "CC-BY-SA": true,
+    "CC-BY": true,
+    "OGA-BY": true,
+    "GPL": true
+  },
+  "enabledAnimations": {
+    "spellcast": false,
+    "thrust": false,
+    "walk": false,
+    "slash": false,
+    "shoot": false,
+    "hurt": false,
+    "climb": false,
+    "idle": false,
+    "jump": false,
+    "sit": false,
+    "emote": false,
+    "run": false,
+    "watering": false,
+    "combat": false,
+    "1h_slash": false,
+    "1h_backslash": false,
+    "1h_halfslash": false
+  },
+  "url": "https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/#sex=teen&body=Body_color_amber&head=Human_male_amber&shadow=Shadow_shadow&nose=Button_nose_amber&clothes=Shortsleeve_red&backpack=Backpack_black&legs=Formal_Pants_blue&shoes=Basic_Shoes_black&weapon=S_staff_light&hair=Bedhead_rose",
+  "layers": [
+    {
+      "itemId": "shadow",
+      "variant": "shadow",
+      "zPos": 0,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "shadow/adult/spellcast/shadow.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt"
+      ]
+    },
+    {
+      "itemId": "weapon_magic_s",
+      "variant": "light",
+      "zPos": 9,
+      "layerNum": 2,
+      "yPos": 512,
+      "isCustom": false,
+      "fileName": "weapon/magic/s/universal/background/walk/light.png",
+      "supportedAnimations": [
+        "walk",
+        "hurt"
+      ]
+    },
+    {
+      "itemId": "body",
+      "variant": "amber",
+      "zPos": 10,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "body/bodies/teen/spellcast/amber.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "feet_shoes_basic",
+      "variant": "black",
+      "zPos": 15,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "feet/shoes/basic/thin/spellcast/black.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "legs_formal",
+      "variant": "blue",
+      "zPos": 20,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "legs/formal/thin/spellcast/blue.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "torso_clothes_shortsleeve",
+      "variant": "red",
+      "zPos": 35,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "torso/clothes/shortsleeve/shortsleeve/teen/spellcast/red.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "heads_human_male",
+      "variant": "amber",
+      "zPos": 100,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "head/heads/human/male/spellcast/amber.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "head_nose_button",
+      "variant": "amber",
+      "zPos": 105,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "head/nose/button/adult/spellcast/amber.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "hair_bedhead",
+      "variant": "rose",
+      "zPos": 120,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "fileName": "hair/bedhead/adult/spellcast/rose.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "weapon_magic_s",
+      "variant": "light",
+      "zPos": 140,
+      "layerNum": 1,
+      "yPos": 512,
+      "isCustom": false,
+      "fileName": "weapon/magic/s/universal/foreground/walk/light.png",
+      "supportedAnimations": [
+        "walk",
+        "hurt"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "fileName": "body/bodies/teen/walk/amber.png",
+      "file": "body/bodies/teen",
+      "notes": "",
+      "authors": [
+        "bluecarrot16",
+        "Evert",
+        "TheraHedwig",
+        "Benjamin K. Smith (BenCreating)",
+        "MuffinElZangano",
+        "Durrani",
+        "Pierre Vigier (pvigier)",
+        "Eliza Wyatt (ElizaWy)",
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "https://opengameart.org/content/lpc-ladies",
+        "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+        "https://opengameart.org/content/lpc-jump-expanded",
+        "https://opengameart.org/content/lpc-revised-character-basics",
+        "https://opengameart.org/content/lpc-be-seated",
+        "https://gitlab.com/vagabondgame/lpc-characters",
+        "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+        "https://opengameart.org/content/lpc-jump-expanded"
+      ]
+    },
+    {
+      "fileName": "head/heads/human/male/walk/amber.png",
+      "file": "head/heads/human/male",
+      "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+      "authors": [
+        "bluecarrot16",
+        "Benjamin K. Smith (BenCreating)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-character-bases"
+      ]
+    },
+    {
+      "fileName": "shadow/adult/walk/shadow.png",
+      "file": "shadow",
+      "notes": "",
+      "authors": [
+        "drjamgo@hotmail.com"
+      ],
+      "licenses": [
+        "CC0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/shadow-for-lpc-sprite"
+      ]
+    },
+    {
+      "fileName": "head/nose/button/adult/walk/amber.png",
+      "file": "head/nose/button",
+      "notes": "",
+      "authors": [
+        "Thane Brimhall (pennomi)",
+        "laetissima",
+        "Matthew Krohn (makrohn)"
+      ],
+      "licenses": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-base-character-expressions"
+      ]
+    },
+    {
+      "fileName": "torso/clothes/shortsleeve/shortsleeve/teen/walk/red.png",
+      "file": "torso/clothes/shortsleeve/shortsleeve/teen",
+      "notes": "original by ElizaWy walkcycle only; extended to all animations by adapting from longsleeve, edited to v3 bases by bluecarrot16; teen version by Nyom; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+      "authors": [
+        "Nyom",
+        "bluecarrot16",
+        "ElizaWy",
+        "JaidynReiman",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-7-womens-shirts",
+        "http://opengameart.org/content/lpc-revised-character-basics",
+        "http://opengameart.org/content/lpc-clothing-updates",
+        "https://opengameart.org/content/lpc-teen-androgynous-short-sleeve-shirt",
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+        "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+        "https://opengameart.org/content/lpc-expanded-simple-shirts"
+      ]
+    },
+    {
+      "fileName": "legs/formal/thin/walk/blue.png",
+      "file": "legs/formal",
+      "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Formal Pants by Bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+      "authors": [
+        "bluecarrot16",
+        "JaidynReiman",
+        "ElizaWy",
+        "Johannes Sjölund (wulax)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "https://opengameart.org/content/lpc-2-characters",
+        "https://opengameart.org/content/lpc-gentleman",
+        "https://opengameart.org/content/lpc-expanded-pants"
+      ]
+    },
+    {
+      "fileName": "feet/shoes/basic/thin/walk/black.png",
+      "file": "feet/shoes",
+      "notes": "original by wulax, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "bluecarrot16",
+        "Johannes Sjölund (wulax)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "http://opengameart.org/content/lpc-clothing-updates",
+        "https://opengameart.org/content/lpc-expanded-socks-shoes"
+      ]
+    },
+    {
+      "fileName": "weapon/magic/s/universal/foreground/walk/light.png",
+      "file": "weapon/magic/s",
+      "notes": "Wooden staff by LordNeo, first adapted to LPC by bigbeargames; re-drawn and walk animations added by bluecarrot16",
+      "authors": [
+        "LordNeo",
+        "Michael Whitlock (bigbeargames)",
+        "bluecarrot16"
+      ],
+      "licenses": [
+        "CC0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/staff-64-x64",
+        "https://opengameart.org/content/lpc-magic-staff"
+      ]
+    },
+    {
+      "fileName": "hair/bedhead/adult/walk/rose.png",
+      "file": "hair/bedhead",
+      "notes": "",
+      "authors": [
+        "JaidynReiman",
+        "Manuel Riecke (MrBeast)"
+      ],
+      "licenses": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-expanded-hair"
+      ]
+    }
+  ]
+}
