@@ -513,7 +513,7 @@ func animation(input):
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	input = get_input()
+	var input = get_input()
 	animation(input)
 	position += input
 	
@@ -526,7 +526,6 @@ func _process(delta: float) -> void:
 sprite_frames = SubResource("SpriteFrames_n7ghd")
 animation = &"WalkLeft"
 script = SubResource("GDScript_onrkg")
-movmentSpeed = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

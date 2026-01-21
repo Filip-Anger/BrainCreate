@@ -509,11 +509,19 @@ func get_input():
 	return input_diretion
 
 func animation(input):
-	pass
+	#var right, left, up, down = \"WalkRight\"
+	if input.x > 0:
+		play(\"WalkRight\")
+	elif input.x < 0:
+		play(\"WalkLeft\")
+	elif input.y > 0:
+		play(\"WalkDown\")
+	elif input.y < 0:
+		play(\"WalkUp\")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	input = get_input()
+	var input = get_input()
 	animation(input)
 	position += input
 	
@@ -526,7 +534,6 @@ func _process(delta: float) -> void:
 sprite_frames = SubResource("SpriteFrames_n7ghd")
 animation = &"WalkLeft"
 script = SubResource("GDScript_onrkg")
-movmentSpeed = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
