@@ -4,3 +4,5 @@ res://Static/Sprite/credits/credits.licenses.translation
 res://Static/Sprite/credits/credits.urls.translation
 res://player.tscn
 res://Static/map/tileset.tres
+res://Room.tscn
+res://player.gd
