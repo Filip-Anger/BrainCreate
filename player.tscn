@@ -1,8 +1,17 @@
-[gd_scene load_steps=72 format=3 uid="uid://ckudr8chj1kgo"]
+[gd_scene load_steps=75 format=3 uid="uid://ckudr8chj1kgo"]
 
 [ext_resource type="Texture2D" uid="uid://d2mulr276yvas" path="res://Static/Sprite/standard/walk.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://tn021r3q7cdo" path="res://Static/Sprite/standard/run.png" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://bknnwfts1uawx" path="res://Static/Sprite/standard/idle.png" id="2_hqtel"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ob4mi"]
+atlas = ExtResource("2_hqtel")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ax26h"]
+atlas = ExtResource("2_hqtel")
+region = Rect2(64, 128, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
 atlas = ExtResource("1_onrkg")
@@ -264,6 +273,17 @@ region = Rect2(512, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ob4mi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ax26h")
+}],
+"loop": true,
+"name": &"IdleDown",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_n7ghd")
 }, {
 "duration": 1.0,
@@ -502,12 +522,8 @@ script/source = "extends AnimatedSprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	
 	pass # Replace with function body.
 
-func get_input():
-	var input_diretion = Input.get_vector('Left', 'Right', 'w', 's')
-	return input_diretion
 
 func animation(inputVect):
 	#var right, left, up, down = \"WalkRight\"
@@ -519,18 +535,18 @@ func animation(inputVect):
 		play(\"WalkDown\")
 	elif inputVect.y < 0:
 		play(\"WalkUp\")
+	else:
+		play(\"IdleDown\")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var inputVect = get_input()
-	animation(inputVect)
-	position += inputVect
+	pass
 	
 	
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(23, 42)
+size = Vector2(28, 66)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_onrkg"]
 
@@ -538,16 +554,20 @@ size = Vector2(23, 42)
 script = ExtResource("1_i3pqv")
 
 [node name="Player" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_n7ghd")
-animation = &"WalkLeft"
+animation = &"IdleDown"
+frame_progress = 0.0427044
 script = SubResource("GDScript_onrkg")
 movmentSpeed = 500
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 9)
+position = Vector2(0, 6.5)
+scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Player")
