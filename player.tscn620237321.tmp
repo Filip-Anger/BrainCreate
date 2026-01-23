@@ -1,7 +1,6 @@
-[gd_scene load_steps=72 format=3 uid="uid://ckudr8chj1kgo"]
+[gd_scene load_steps=70 format=3 uid="uid://ckudr8chj1kgo"]
 
 [ext_resource type="Texture2D" uid="uid://d2mulr276yvas" path="res://Static/Sprite/standard/walk.png" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://tn021r3q7cdo" path="res://Static/Sprite/standard/run.png" id="1_onrkg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
@@ -509,48 +508,28 @@ func get_input():
 	var input_diretion = Input.get_vector('Left', 'Right', 'w', 's')
 	return input_diretion
 
-func animation(inputVect):
-	#var right, left, up, down = \"WalkRight\"
-	if inputVect.x > 0:
-		play(\"WalkRight\")
-	elif inputVect.x < 0:
-		play(\"WalkLeft\")
-	elif inputVect.y > 0:
-		play(\"WalkDown\")
-	elif inputVect.y < 0:
-		play(\"WalkUp\")
+func animation(input):
+	pass
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var inputVect = get_input()
-	animation(inputVect)
-	position += inputVect
+	var input = get_input()
+	animation(input)
+	position += input
 	
 	
 "
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(23, 42)
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_onrkg"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_i3pqv")
-
-[node name="Player" type="AnimatedSprite2D" parent="."]
+[node name="Player" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_n7ghd")
 animation = &"WalkLeft"
 script = SubResource("GDScript_onrkg")
-movmentSpeed = 500
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 9)
-shape = SubResource("RectangleShape2D_onrkg")
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../Player")
 libraries = {
 &"": SubResource("AnimationLibrary_onrkg")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
